@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Portfolio Webpage</title>
+        <style>
+            .main-section {
+                background-color: skyblue;
+                font-family: Arial;
+                padding: 10px;
+                border-radius: 10px;
+                width: 90vw;
+                max-width: 94%;
+            }
+
+            #nav-bar {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                height: 100%;
+                margin-top: 10px;
+                background-color: white;
+                font-family: arial;
+            }
+
+            #main-doc {
+                position: absolute;
+                margin-left: 160px;
+                margin-top: 10px;
+            }
+
+            /*unvisited link*/
+            a:link {
+                color: black;
+            }
+            /*visited link*/
+            a:visited {
+                color: purple;
+            }
+            /*mouse over link*/
+            a:hover {
+                color: blue;
+            }
+            /*selected link*/
+            a:active {
+                color: blueviolet;
+            }
+
+            .welcome-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                width: 90vw;
+                height: 100vh;
+                max-width: 94%;
+                background-color: skyblue;
+                font-family: Arial;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            @media (max-width: 800px) {
+                #nav-bar {
+                position: fixed;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                top: 0px;
+                width: 90%;
+                height: 20px;
+                padding-right: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: white;
+                font-family: arial;
+                margin-top: 0px;
+                margin-left: 10px;
+                z-index: 2;
+                }
+
+                #main-doc {
+                    position: absolute;
+                    margin-top: 40px;
+                    margin-left: 10px;
+                    z-index: 1;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav-bar" class="nav-link" width=auto>
+            <a href="#welcome-section">Welcome</a>
+            <a href="#projects">Projects</a>
+            <a href="#profile-link">Profile</a>
+        </nav>
+        <main id="main-doc">
+            <section class="welcome-section" id="welcome-section">
+                <header>
+                    <h1>Welcome</h1>
+                    <p>Welcome to my personal portfolio webpage</p>
+                    <br>
+                </header>
+            </section>
+            <br>
+            <section class="main-section" id="projects">
+                <header>
+                    <h1>Projects</h1>
+                    <div class="project-tile">
+                        <nav id="projects-nav" class="nav-link" width=auto>
+                            <a href="https://jeandot.github.io/tribute-page" target="_blank">Tribute Page</a>
+                            <br>
+                            <a href="https://jeandot.github.io/survey-form" target="_blank">Survey Form</a>
+                            <br>
+                            <a href="https://jeandot.github.io/product-landing-page" target="_blank">Product Landing Page</a>
+                            <br>
+                            <a href="https://jeandot.github.io/technical-documentation-page" target="_blank">Technical Documentation Page</a>
+                            <br>
+                        </nav>
+                        <br>
+                    </div>
+                </header>
+            </section>
+            <br>
+            <section class="main-section" id="profile-link">
+                <header>
+                    <h1>Profile</h1>
+                    <a href="https://www.freecodecamp.org/jeanlee" target="_blank">Click to see my profile</a>
+                    <br>
+                    <br>
+                </header>
+            </section>
+            <br>
+        </main>
+    </body>
+</html>
